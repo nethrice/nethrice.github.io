@@ -189,6 +189,8 @@
     background:var(--bg-panel-2); border:1px solid var(--border);
     padding:7px 12px; border-radius:20px;
   }
+  .welcome-pill{gap:7px; color:var(--text);}
+  .welcome-pill::before{content:""; width:18px; height:8px; background:linear-gradient(90deg,#e95b5b 0 16%,#f0a43c 16% 33%,#f5d45c 33% 50%,#69b86a 50% 67%,#59a9d6 67% 84%,#9a78c4 84%); border-radius:1px;}
   .dot{width:7px; height:7px; border-radius:50%; background:var(--grass-bright); box-shadow:0 0 8px var(--grass-bright);}
   @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.4;}}
   .dot{animation:pulse 2s ease-in-out infinite;}
@@ -442,6 +444,7 @@
   .footer-col h4{font-size:13px; letter-spacing:1px; text-transform:uppercase; color:var(--text-faint); margin-bottom:14px; font-family:var(--mono); font-weight:500;}
   .footer-col a{display:block; font-size:14.5px; color:var(--text-muted); margin-bottom:10px;}
   .footer-col a:hover{color:var(--grass-bright);}
+  .footer-welcome{margin-top:12px; color:var(--text-muted); font-size:12.5px;}
   .footer-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; padding-top:26px; border-top:1px solid var(--border); font-size:13px; color:var(--text-faint);}
 
   /* ---------- Responsive ---------- */
@@ -476,6 +479,7 @@
         <li><a href="#donate">Donate</a></li>
       </ul>
       <div style="display:flex; align-items:center; gap:14px;">
+        <div class="status-pill welcome-pill">LGBTQ+ Friendly</div>
         <div class="status-pill"><span class="dot"></span> Server Online</div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
       </div>
@@ -741,6 +745,7 @@
           <span class="brand-name" style="font-size:16px;">nSMP</span>
         </div>
         <p style="color:var(--text-faint); font-size:13.5px; max-width:280px;">A free, vanilla-inspired SMP with zero pay-to-win, always open to everyone.</p>
+        <p class="footer-welcome">LGBTQ+ friendly. Everyone belongs here.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
